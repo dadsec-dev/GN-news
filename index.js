@@ -13,7 +13,7 @@ app.use(cors());
 // app.use(express.static(path.join(__dirname, "client/build")));
 
 // An api endpoint that returns a short list of items
-app.get("/", (req, res) => {
+app.get("/api/rates", (req, res) => {
   const Ratess = async () => {
     try {
       const browser = await puppeteer.launch();
